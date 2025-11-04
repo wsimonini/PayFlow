@@ -5,4 +5,7 @@
   <ItemGroup>
     <ProjectReference Include="..\PayFlow.Domain\PayFlow.Domain.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Collection\" />
+  </ItemGroup>
 </Project>

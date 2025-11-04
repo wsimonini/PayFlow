@@ -1,0 +1,105 @@
+{
+	"info": {
+		"_postman_id": "9fde3e17-f851-4e59-8232-d5146d575b2a",
+		"name": "PayFlow",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "4536384"
+	},
+	"item": [
+		{
+			"name": "Payments SecurePay",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"amount_cents\": 12050, \r\n    \"currency_code\": \"BRL\", \r\n    \"client_reference\": \"ORD-20251022\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5002/payments/securepay",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5002",
+					"path": [
+						"payments",
+						"securepay"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Payments API",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"amount\": 150.00,\r\n  \"currency\": \"BRL\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:5002/payments",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "5002",
+					"path": [
+						"payments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Docker Payments",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "accept",
+						"value": "*/*"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"amount\": 100.00,\r\n  \"currency\": \"string\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/payments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"payments"
+					]
+				},
+				"description": "Generated from cURL: curl -X 'POST' \\\r\n  'http://localhost:5000/payments' \\\r\n  -H 'accept: */*' \\\r\n  -H 'Content-Type: application/json' \\\r\n  -d '{\r\n  \"amount\": 0,\r\n  \"currency\": \"string\"\r\n}'"
+			},
+			"response": []
+		}
+	]
+}
