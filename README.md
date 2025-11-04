@@ -33,15 +33,6 @@ A resposta da API contém:
   "status": "approved"
 }
 
-🧩 Estrutura do Projeto
-PayFlowSolution/
-├── src/
-│   ├── PayFlow.Api/            # Controllers e Endpoints
-│   ├── PayFlow.Application/    # Casos de uso (UseCases)
-│   ├── PayFlow.Domain/         # Entidades e Ports
-│   └── PayFlow.Infrastructure/ # Adapters (FastPay e SecurePay)
-└── tests/
-    └── PayFlow.Tests/          # Testes unitários
 ------------------------------------------------
 ▶️ Executando o Projeto (Localmente)
 Via Visual Studio
