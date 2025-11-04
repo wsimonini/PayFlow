@@ -42,7 +42,6 @@ PayFlowSolution/
 │   └── PayFlow.Infrastructure/ # Adapters (FastPay e SecurePay)
 └── tests/
     └── PayFlow.Tests/          # Testes unitários
-
 ------------------------------------------------
 ▶️ Executando o Projeto (Localmente)
 Via Visual Studio
