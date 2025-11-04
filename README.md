@@ -25,7 +25,6 @@ O objetivo é permitir integração com múltiplos provedores de pagamento (Fast
   - **SecurePay:** 2,99% + R$0,40 fixo  
 
 A resposta da API contém:
-```json
 {
   "provider": "SecurePay",
   "grossAmount": 120.50,
