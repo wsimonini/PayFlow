@@ -42,6 +42,7 @@ PayFlowSolution/
 │   └── PayFlow.Infrastructure/ # Adapters (FastPay e SecurePay)
 └── tests/
     └── PayFlow.Tests/          # Testes unitários
+
 ------------------------------------------------
 ▶️ Executando o Projeto (Localmente)
 Via Visual Studio
@@ -99,5 +100,5 @@ Wesley Simonini
 Arquitetura Hexagonal | .NET 6 | SOLID | Clean Code
 
 ------------------------------------------------
-Obs: Adiocione a Collection do Postman dentro de:
+Obs: Adicionei a Collection do Postman dentro de:
 PayFlowSolution\src\PayFlow.Infrastructure\Collection
